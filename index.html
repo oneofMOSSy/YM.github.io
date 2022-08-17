@@ -15,14 +15,17 @@
         margin-right: 12.5%;
         background: color #a6a6a6;;
         box-shadow: 3px 10px 7px 12px #8c8c8c;
-        padding-bottom: 10%;
+        padding-bottom: 5%;
+        z-index: 1;
+        position: relative;
     }
 
 
     h1 {
         text-align: center;
-        padding-top: 12.5%;
+        padding-top: 5%;
         font-family:'Courier New', Courier, monospace;
+        margin-bottom: 3%;
     }
 
     h3 {
@@ -30,25 +33,67 @@
         text-align: center;
         padding-top: 3%;
         font-family:'Courier New', Courier, monospace;
+        font-size:150%;
+
     }
 
     h4 {
         margin: 0px;
         text-align: center;
         font-family:'Courier New', Courier, monospace;
+        font-size: 120%;
+    }
+
+    #copy {
+        text-align: center;
+        color: #8c8c8c;
+        margin: 0%;
+        margin-top: 3%;
+    }
+
+    #Jon {
+        height: 50%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        top: 10%;
+        margin-left: 32.5%;
+        position:fixed;
+    }
+
+    .buttoncopy {
+        align-items: center;
+        border: none;
+        background-color: transparent;
+        margin-top:3.5%;    
+        position: absolute;
+        left: 42.5%;
     }
 </style>
-<body>
+<script>
+    function Copyjon() {
+        var x = document.getElementById("Jon")
+        if (x.style.display === "none") {
+            x.style.display = "block";}
+            else {
+                x.style.display = "none";
+            }
+    }
+</script>
+<body onload="Copyjon()">
 <head>
+    <img id="Jon" src="cheifjon.png">
     <div class="ruta">
         <h1>Ymers Mat</h1>
         <h3>Frukost</h3>
-        <h4>Blodpudding</h4>
+        <h4>Egg and Beacon</h4>
         <h3>Lunch</h3>
-        <h4>Salcicca, Potatis mos</h4>
+        <h4>Korv</h4>
         <h3>Middag</h3>
-        <h4>Torsk</h4>
+        <h4>Something good</h4>
     </div>
+    <button class="buttoncopy" onclick="Copyjon()"><p id="copy">Copyright by Jonkan 2022</p></button>
 
 </head>
 </body>
