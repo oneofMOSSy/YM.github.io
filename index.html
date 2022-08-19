@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     body {
@@ -52,24 +52,24 @@
     }
 
     #Jon {
-        height: 50%;
-        width: 20%;
+        height: auto;
+        width: 15%;
         margin-left: auto;
         margin-right: auto;
         z-index: 2;
         top: 10%;
-        margin-left: 32.5%;
-        position:fixed;
+        position:absolute;
+        max-height: 500px;
     }
 
     .buttoncopy {
         align-items: center;
         border: none;
         background-color: transparent;
-        margin-top:3.5%;    
-        position:sticky;
-        left:42.5%;
-        right: 42.5%;
+        margin-top:6%;    
+        position:absolute;
+        margin-left: auto;
+        margin-right: auto;
     }
 </style>
 <script>
@@ -89,13 +89,15 @@
     <div class="ruta">
         <h1>Ymers Mat</h1>
         <h3>Frukost</h3>
-        <h4>Champinjon omelett</h4>
+        <h4>Varm macka</h4>
         <h3>Lunch</h3>
-        <h4>Kotletter</h4>
+        <h4>Little bit of everything</h4>
         <h3>Middag</h3>
-        <h4>Spenatsoppa + Pankakor</h4>
+        <h4>Renskav</h4>
     </div>
+    <center>
     <button class="buttoncopy" onclick="Copyjon()"><p id="copy">Copyright by Jonkan 2022</p></button>
+    </center> 
 
 </head>
 </body>
